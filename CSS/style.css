@@ -1,0 +1,149 @@
+@font-face {
+    font-family: firstFont;
+    src: url(../desard.otf);
+}
+
+@font-face {
+    font-family: secondFont;
+    src: url(fabfeltscript.bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(218, 213, 219);
+}
+
+.container{
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto 0;
+    border-radius: 10px 10px 0 0;
+    /* border: 1px solid; */
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+    background-color: #DE3F53;
+    padding: 5px;
+    border-radius: 10px 10px 0 0;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.add_task{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#input_text, #input_button, #update_button{
+    border: none;
+    color: white;
+    outline: transparent;
+}
+
+#input_button, #update_button{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+#input_text{
+    width: 90%;
+    background-color: #3C4979;  
+    padding: 7px; 
+}
+
+#input_button{
+    width: 10%;
+    background-color: #67D2AF;
+    font-size: large;
+    height: 100%;
+}
+
+#update_button{
+    width: 20%;
+    background-color: #67D2AF;
+    font-size: large;
+    display: none;
+}
+
+::placeholder { 
+    color: white;
+    opacity: .8;
+  }
+
+
+#my_todo{
+    background-color: #262E4C;
+}
+
+#my_todo #todo_div_container{
+    border-bottom: 1px solid rgba(119, 136, 153, 0.692);
+    padding: 5px;
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-overflow:clip;
+}
+.fa-edit, .fa-trash-alt{
+    position: absolute;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.fa-edit:hover, .fa-trash-alt:hover{
+    color: white;
+}
+
+.fa-edit{
+    font-size: 16px;
+    right: 40px;
+}
+
+.fa-trash-alt{
+    right: 20px;
+    font-size: 14px;
+}
+
+#singleToDo{
+    color: white;
+    order: 2;
+    font-family: secondFont;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 3px;
+} 
+
+#circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin: 0 5px;
+    border-color: white;
+    order: 1;
+}
+
+#start_quote {
+    background-color: white;
+    color: #67D2AF;
+    padding: 10px;
+    margin:50px auto;
+    border-radius: 10px;
+    width: 20%;
+    min-width: 300PX;
+    text-align: center;
+    font-size: 26px;
+    font-family: firstFont;
+}

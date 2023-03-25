@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To do list</h1>
+        <div class="add_task">
+            <input type="text" id="input_text" placeholder="Add new task..." onfocus="input_got_focus()" onblur="input_lost_focus()">
+            <input type="button" value="+" id="input_button" onclick="addNewToDO()">
+            <input type="button" value="Update" id="update_button" onclick="addNewToDO()">
+        </div>
+        <div id="my_todo"></div>
+    </div>
+
+    <div id="start_quote">
+        <p>Let's Begin Our List <i class="far fa-smile-beam"></i></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
